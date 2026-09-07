@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patricia Orenza — Data & Business Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <p class="sidebar-name">Patricia Orenza</p>
+    <p class="sidebar-role">Data &amp; Business Analyst</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#coaching">Coaching</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="sidebar-stats">
+    <div class="stat">
+      <span class="stat-value">2026</span>
+      <span class="stat-label">Graduating</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">2</span>
+      <span class="stat-label">Projects</span>
+    </div>
+  </div>
+
+  <div class="sidebar-socials">
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:youremail@example.com">Email</a>
+  </div>
+</aside>
+
+<main class="main">
+
+  <section class="hero" id="top">
+    <p class="hero-eyebrow">Portfolio — 2026</p>
+    <h1 class="hero-name">Patricia Orenza</h1>
+    <p class="hero-tagline"><span id="typewriter"></span><span class="cursor">|</span></p>
+    <p class="hero-line">[[ One-line positioning statement — e.g. "Final-year Information Systems student turning data into decisions." ]]</p>
+  </section>
+
+  <section class="block" id="about">
+    <h2 class="block-title">About</h2>
+    <div class="block-body">
+      <p>[[ About paragraph goes here — background, what you're looking for, what makes your profile distinct (e.g. analyst + basketball coach). ]]</p>
+    </div>
+    <div class="about-ctas">
+      <a href="assets/Patricia_Orenza_CV.pdf" class="btn btn-primary" download>Download CV</a>
+      <a href="[[ your LinkedIn URL ]]" class="btn btn-secondary" target="_blank" rel="noopener">View LinkedIn</a>
+    </div>
+
+    <div class="toolkit">
+      <span class="toolkit-label">Toolkit</span>
+      <div class="toolkit-list">
+        <span>SQL</span>
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>SPSS Modeler</span>
+        <span>Google Analytics</span>
+        <span>Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <h2 class="block-title">Projects</h2>
+
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-label">Projects</span>
+        <span class="kpi-value">[[ n ]]</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Tools used</span>
+        <span class="kpi-value">[[ n ]]</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Status</span>
+        <span class="kpi-value accent">1 done</span>
+      </div>
+    </div>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="sql">SQL</button>
+      <button class="filter-pill" data-filter="python">Python</button>
+      <button class="filter-pill" data-filter="powerbi">Power BI</button>
+      <button class="filter-pill" data-filter="spotify">Spotify API</button>
+    </div>
+
+    <div class="project-list" id="projectList">
+      <article class="project-card" data-tags="sql powerbi">
+        <div class="project-card-top">
+          <h3>VAFPQR</h3>
+          <span class="status-tag status-completed">Completed</span>
+        </div>
+        <p class="project-desc">[[ One-line description of your final year project — what question it answered and what you built. ]]</p>
+        <div class="project-tools">
+          <span>[[ Tool ]]</span><span>[[ Tool ]]</span>
+        </div>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View project →</a>
+      </article>
+
+      <article class="project-card" data-tags="python spotify">
+        <div class="project-card-top">
+          <h3>[[ Ongoing project name ]]</h3>
+          <span class="status-tag status-progress">In progress</span>
+        </div>
+        <p class="project-desc">[[ One-line description — what it explores and current stage. ]]</p>
+        <div class="project-tools">
+          <span>[[ Tool ]]</span><span>[[ Tool ]]</span>
+        </div>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View project →</a>
+      </article>
+
+      <article class="project-card" data-tags="planned">
+        <div class="project-card-top">
+          <h3>[[ Ongoing project name ]]</h3>
+          <span class="status-tag status-progress">In progress</span>
+        </div>
+        <p class="project-desc">[[ One-line description — what it explores and current stage. ]]</p>
+        <div class="project-tools">
+          <span>[[ Tool ]]</span><span>[[ Tool ]]</span>
+        </div>
+        <a href="#" class="project-link" target="_blank" rel="noopener">View project →</a>
+      </article>
+
+      <!-- Duplicate this <article> block for a 3rd ongoing project if needed -->
+    </div>
+
+    <div class="chart-row" aria-hidden="true">
+      <div class="bar" style="height:45%"></div>
+      <div class="bar" style="height:78%"></div>
+      <div class="bar" style="height:30%"></div>
+      <div class="bar" style="height:60%"></div>
+      <div class="bar" style="height:90%"></div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <h2 class="block-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-date">[[ Dates ]]</span>
+        <h3>[[ Role ]] — [[ Company ]]</h3>
+        <p>[[ One or two lines on what you did and the outcome. ]]</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">[[ Dates ]]</span>
+        <h3>[[ Role ]] — [[ Company ]]</h3>
+        <p>[[ One or two lines on what you did and the outcome. ]]</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">[[ Dates ]]</span>
+        <h3>[[ Role ]] — [[ Company ]]</h3>
+        <p>[[ One or two lines on what you did and the outcome. ]]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="coaching">
+    <h2 class="block-title">Hoop Nation — coaching</h2>
+    <p class="block-body">[[ Short intro on Hoop Nation and your role as Founder & Head Coach. ]]</p>
+    <div class="stat-line">
+      <div class="stat-line-item">
+        <span class="stat-line-value">[[ year ]]</span>
+        <span class="stat-line-label">Founded</span>
+      </div>
+      <div class="stat-line-item">
+        <span class="stat-line-value">Head coach</span>
+        <span class="stat-line-label">Role</span>
+      </div>
+      <div class="stat-line-item">
+        <span class="stat-line-value">[[ focus ]]</span>
+        <span class="stat-line-label">Focus</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <h2 class="block-title">Contact</h2>
+    <p class="block-body">[[ Short line inviting recruiters to reach out. ]]</p>
+    <div class="contact-links">
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Patricia Orenza</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
