@@ -103,7 +103,7 @@ a:hover { color: var(--brass); }
 
 .stat-value {
   font-family: var(--font-mono);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -124,8 +124,11 @@ a:hover { color: var(--brass); }
 }
 
 .stat-label {
-  font-size: 11px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--sage);
+  opacity: 0.9;
 }
 
 .sidebar-socials {
