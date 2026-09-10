@@ -2,8 +2,8 @@
 const taglinePhrases = [
   'Data storyteller.',
   'Insight seeker.',
-  'Business analyst in the making.',
-  'Court-side coach.'
+  'Business analyst.',
+  'Basketball player & coach.'
 ];
 
 const typewriterEl = document.getElementById('typewriter');
@@ -50,24 +50,5 @@ sidebar.querySelectorAll('.sidebar-nav a').forEach(link => {
   link.addEventListener('click', () => {
     sidebar.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
-  });
-});
-
-// Project filter pills
-const filterPills = document.querySelectorAll('.filter-pill');
-const projectCards = document.querySelectorAll('.project-card');
-
-filterPills.forEach(pill => {
-  pill.addEventListener('click', () => {
-    filterPills.forEach(p => p.classList.remove('active'));
-    pill.classList.add('active');
-
-    const filter = pill.dataset.filter;
-
-    projectCards.forEach(card => {
-      const tags = card.dataset.tags.split(' ');
-      const show = filter === 'all' || tags.includes(filter);
-      card.style.display = show ? '' : 'none';
-    });
   });
 });
